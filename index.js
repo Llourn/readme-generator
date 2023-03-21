@@ -38,7 +38,7 @@ const questions = [
   {
     type: "list",
     name: "license",
-    message: "Lisense",
+    message: "License",
     choices: [
       "Apache License 2.0",
       "ISC License",
@@ -60,7 +60,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  const targetPath = path.resolve(__dirname, `./${fileName}`);
+  const targetPath = path.resolve(__dirname, `./output/${fileName}`);
 
   fs.writeFile(targetPath, data, (err) => {
     if (err) {
@@ -75,7 +75,7 @@ function init() {
     .prompt(questions)
     .then((answers) => {
       const markdown = generateMarkdown(answers);
-      writeToFile("README-TEST.md", markdown);
+      writeToFile("README.md", markdown);
     })
     .catch((error) => {
       if (error.isTyError) {
