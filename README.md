@@ -4,10 +4,13 @@
 
 Quickly and easily generate your very own README for any project! Node.js app that generates a README.md file after answering a few simple questions in the terminal. Give it a try and you'll never go back to manual README creation!
 
+
+https://user-images.githubusercontent.com/4216705/226499647-f675b7a8-d565-4287-a9b2-84848584c250.mov
+
+
 ## Table of Contents
 
 - [Installation](#installation)
-- [Credits](#credits)
 - [License](#license)
 - [Usage Instructions](#usage-instructions)
 
